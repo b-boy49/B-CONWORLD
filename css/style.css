@@ -1,0 +1,168 @@
+:root {
+  --bg: #050505;
+  --panel: #0d0d0d;
+  --line: #2a2a2a;
+  --yellow: #f0cb09;
+  --white: #f8f8f8;
+  --red: #b90a13;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #020202;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../image/bg-main.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--white);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 240px 1fr 480px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #040404;
+  border-right: 1px solid var(--line);
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: var(--yellow);
+  font: 900 68px/0.9 "Bebas Neue", sans-serif;
+  transform: rotate(-8deg);
+  margin-bottom: 46px;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 10px;
+}
+
+.sidebar a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid #222;
+  padding: 18px 0;
+}
+
+.sidebar small {
+  color: var(--yellow);
+  letter-spacing: 1px;
+}
+
+.sns {
+  margin-top: auto;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  display: flex;
+  gap: 14px;
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.hero {
+  padding: 65px 50px 32px;
+  position: relative;
+}
+
+.lead {
+  text-align: center;
+  color: var(--yellow);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.title-logo {
+  display: block;
+  width: min(100%, 700px);
+  height: auto;
+  margin: 8px 0 10px;
+}
+
+.badge {
+  width: fit-content;
+  background: #fff;
+  color: #111;
+  border-radius: 100px;
+  padding: 14px 36px;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 12px 0 35px;
+}
+
+.badge span {
+  color: #d8aa00;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  text-align: left;
+  justify-items: start;
+}
+
+.features h2 {
+  color: var(--yellow);
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.features p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.art {
+  position: relative;
+  overflow: hidden;
+}
+
+.character {
+  position: absolute;
+  right: -320px;
+  bottom: 190px;
+  width: 975px;
+  max-width: none;
+  height: auto;
+  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1400px) {
+  .page {
+    grid-template-columns: 210px 1fr;
+  }
+
+  .art {
+    display: none;
+  }
+
+  .title-logo {
+    width: min(100%, 520px);
+  }
+
+  .badge {
+    font-size: 30px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
