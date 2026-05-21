@@ -30,6 +30,20 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - `sample.html` shows top hero banner from `image/SAMPLES TOP.png`.
 - Samples hero includes animated yellow electric line at the bottom edge.
 
+## Business Context (Read First for Content Work)
+Primary business context file:
+- `docs/business/business-overview.md`
+- `docs/business/request-contract.md`
+
+Summary:
+- Service targets streamers/VTubers/SNS creators and builds unified brand visuals from one icon.
+- Main deliverables include icon, logo, stamp, overlay, schedule image, thumbnail, and promo images.
+- Pricing is low-cost (e.g., icon+logo 500 JPY, overlay 1000 JPY) with a 1500 JPY set option.
+- Subscription plan: 2000 JPY/month for weekly schedule visuals (4 per month).
+- Design priority: maximize creator identity and consistent worldbuilding.
+- Policy includes prepayment, start after payment confirmation, no unauthorized resale.
+- Contract policy also defines revision limits, resale prohibition, and sample/SNS publication handling.
+
 ## Build, Test, and Development Commands
 No package manager scripts are currently defined.
 
@@ -73,5 +87,6 @@ Always update `AGENTS.md` when any of the following changes:
 - External SNS URLs
 - New pages or renamed files
 - Key visual behavior (fixed layout, animations, hero/banner usage)
+- Business model, pricing, service scope, or request policy docs in `docs/business`
 
 This keeps future work fast by avoiding full-repo rediscovery.

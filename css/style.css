@@ -31,7 +31,7 @@ body.simple-black {
 }
 
 body.simple-black .page {
-  width: 0;
+  width: 240px;
   min-height: 0;
 }
 
@@ -185,17 +185,17 @@ body.simple-black .page {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
   z-index: 1000;
 }
 
 .logo {
   display: block;
-  width: min(680px, 100%);
+  width: 280%;
+  max-width: none;
   height: auto;
-  margin: 0;
-  margin-left: -270px;
-  margin-top: -40px;
-  margin-bottom: -180px;
+  margin: 0 0 0 -175px;
 }
 
 .sidebar nav {
