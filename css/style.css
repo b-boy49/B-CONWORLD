@@ -15,9 +15,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #020202;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../image/bg-main.png");
+  background-image: url("../image/right.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,8 +25,7 @@ body {
 }
 
 .page {
-  display: grid;
-  grid-template-columns: 240px 1fr 480px;
+  width: 240px;
   min-height: 100vh;
 }
 
@@ -41,10 +38,13 @@ body {
 }
 
 .logo {
-  color: var(--yellow);
-  font: 900 68px/0.9 "Bebas Neue", sans-serif;
-  transform: rotate(-8deg);
-  margin-bottom: 46px;
+  display: block;
+  width: 680px;
+  height: auto;
+  margin: 0;
+  margin-left: -270px;
+  margin-top: -40px;
+  margin-bottom: -180px;
 }
 
 .sidebar nav {
@@ -59,11 +59,50 @@ body {
   color: #fff;
   border-top: 1px solid #222;
   padding: 18px 0;
+  position: relative;
+  transition:
+    color 0.22s ease,
+    transform 0.22s ease,
+    padding-left 0.22s ease,
+    background-color 0.22s ease;
 }
 
 .sidebar small {
   color: var(--yellow);
   letter-spacing: 1px;
+  transition: color 0.22s ease;
+}
+
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  width: 6px;
+  height: 0;
+  background: var(--yellow);
+  transform: translateY(-50%);
+  border-radius: 3px;
+  transition: height 0.22s ease;
+}
+
+.sidebar a:hover,
+.sidebar a:focus-visible {
+  color: var(--yellow);
+  background-color: rgba(240, 203, 9, 0.08);
+  transform: translateX(6px);
+  padding-left: 10px;
+  outline: none;
+}
+
+.sidebar a:hover small,
+.sidebar a:focus-visible small {
+  color: #fff;
+}
+
+.sidebar a:hover::before,
+.sidebar a:focus-visible::before {
+  height: 65%;
 }
 
 .sns {
@@ -72,97 +111,41 @@ body {
   padding-top: 20px;
   display: flex;
   gap: 14px;
-  color: var(--yellow);
-  font-weight: 700;
 }
 
-.hero {
-  padding: 65px 50px 32px;
-  position: relative;
-}
-
-.lead {
-  text-align: center;
-  color: var(--yellow);
-  font-weight: 700;
-  margin: 0 0 10px;
-}
-
-.title-logo {
-  display: block;
-  width: min(100%, 700px);
-  height: auto;
-  margin: 8px 0 10px;
-}
-
-.badge {
-  width: fit-content;
-  background: #fff;
-  color: #111;
-  border-radius: 100px;
-  padding: 14px 36px;
-  font-size: 42px;
-  font-weight: 900;
-  margin: 12px 0 35px;
-}
-
-.badge span {
-  color: #d8aa00;
-}
-
-.features {
+.sns-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #3a3a3a;
+  border-radius: 50%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
-  text-align: left;
-  justify-items: start;
+  place-items: center;
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.02);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.features h2 {
-  color: var(--yellow);
-  font-size: 24px;
-  margin: 0 0 10px;
+.sns-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
-.features p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.art {
-  position: relative;
-  overflow: hidden;
-}
-
-.character {
-  position: absolute;
-  right: -320px;
-  bottom: 190px;
-  width: 975px;
-  max-width: none;
-  height: auto;
-  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.5));
+.sns-btn:hover,
+.sns-btn:focus-visible {
+  transform: translateY(-3px) scale(1.06);
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: #111;
+  outline: none;
 }
 
 @media (max-width: 1400px) {
   .page {
-    grid-template-columns: 210px 1fr;
-  }
-
-  .art {
-    display: none;
-  }
-
-  .title-logo {
-    width: min(100%, 520px);
-  }
-
-  .badge {
-    font-size: 30px;
-  }
-
-  .features {
-    grid-template-columns: repeat(2, 1fr);
+    width: 210px;
   }
 }
