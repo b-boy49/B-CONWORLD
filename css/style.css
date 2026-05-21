@@ -93,6 +93,7 @@ body.simple-black .page {
   width: 100%;
   background: #000;
   border-bottom: 2px solid #7d6700;
+  padding: 18px 22px;
 }
 
 .sample-block img {
@@ -104,6 +105,8 @@ body.simple-black .page {
 .sample-link {
   position: relative;
   display: block;
+  width: min(100%, 780px);
+  margin: 0 auto;
   text-decoration: none;
   border: 2px solid rgba(240, 203, 9, 0.55);
   transition:
