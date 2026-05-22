@@ -300,6 +300,21 @@ body.simple-black .page {
   text-align: center;
 }
 
+.price-main {
+  background: #000;
+  padding: 0;
+}
+
+.price-hero {
+  width: 100%;
+}
+
+.price-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .back-to-sample-btn {
   display: block;
   width: min(100%, 520px);
