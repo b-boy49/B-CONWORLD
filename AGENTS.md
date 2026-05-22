@@ -28,6 +28,8 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Main pages: `index.html` (top) and `sample.html` (samples).
 - `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
+- `contact.html` (terms/contact destination) displays two full-width images (`image/b5347a23-02c2-44f1-862c-801d6d9e670b.png` then `image/3d4c1f6d-691f-4e85-aca1-c22c156052b7.png`) and a full-width image button (`image/b87b7625-3821-4545-8b9b-05805b34f2e6.png`) linking to X in a new tab.
+- The contact page image button has an exaggerated hover/focus effect (lift, scale, glow, and color boost) for strong visual feedback.
 - Social buttons (`X`, `Discord`, `Twitch`) are image buttons and open external links in new tabs.
 - `sample.html` shows top hero banner from `image/SAMPLES TOP.png`.
 - Samples hero includes animated yellow electric line at the bottom edge.
