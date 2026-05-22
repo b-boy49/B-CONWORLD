@@ -315,6 +315,31 @@ body.simple-black .page {
   height: auto;
 }
 
+.flow-main {
+  background: #000;
+  padding: 0;
+}
+
+.flow-hero {
+  position: relative;
+  width: 100%;
+}
+
+.flow-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flow-x-overlay {
+  position: absolute;
+  left: calc(11.5% + 192px);
+  bottom: calc(12% - 113px);
+  width: clamp(50px, 4.4vw, 72px);
+  height: clamp(50px, 4.4vw, 72px);
+  z-index: 2;
+}
+
 .back-to-sample-btn {
   display: block;
   width: min(100%, 520px);

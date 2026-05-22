@@ -26,7 +26,8 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 ## Current Site Snapshot
 - Sidebar is fixed on the left across pages.
 - Main pages: `index.html` (top) and `sample.html` (samples).
-- `price.html` displays a single pricing image (`image/21ac5fde-823b-46f4-a38b-a904b65bc69f.png`) at full width, with vertical scrolling to view the entire image.
+- `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
+- `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
 - Social buttons (`X`, `Discord`, `Twitch`) are image buttons and open external links in new tabs.
 - `sample.html` shows top hero banner from `image/SAMPLES TOP.png`.
 - Samples hero includes animated yellow electric line at the bottom edge.
