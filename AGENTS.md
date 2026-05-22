@@ -25,6 +25,8 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 
 ## Current Site Snapshot
 - Sidebar is fixed on the left across pages.
+- On mobile widths (around `900px` and below), sidebar navigation switches from vertical stacking to a horizontal wrapped layout.
+- On mobile widths (around `900px` and below), the top page background image uses a full-image fit (`contain`, top-centered) so the artwork remains visible.
 - Main pages: `index.html` (top) and `sample.html` (samples).
 - `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.

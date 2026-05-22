@@ -562,6 +562,11 @@ body.simple-black .page {
     background-attachment: scroll;
   }
 
+  body:not(.simple-black) {
+    background-size: contain;
+    background-position: top center;
+  }
+
   .page {
     width: 100%;
     min-height: 0;
@@ -585,15 +590,30 @@ body.simple-black .page {
   }
 
   .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
   }
 
   .sidebar nav a {
-    padding: 14px 0;
+    flex: 1 1 45%;
+    min-width: 140px;
+    align-items: center;
+    text-align: center;
+    padding: 12px 8px;
+    border-top: 0;
+    border-bottom: 1px solid #222;
   }
 
   .sidebar nav a::before {
-    left: -8px;
+    display: none;
+  }
+
+  .sidebar nav a:hover,
+  .sidebar nav a:focus-visible {
+    transform: translateY(-2px);
+    padding-left: 8px;
   }
 
   .sns {
