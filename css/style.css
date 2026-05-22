@@ -102,6 +102,11 @@ body.simple-black .page {
   height: auto;
 }
 
+.sample-thumb-no6 {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .sample-link {
   position: relative;
   display: block;
@@ -240,6 +245,11 @@ body.simple-black .page {
 .album-image-wrap img {
   width: 100%;
   margin: 0;
+}
+
+.no6-original-icon {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .album-image-label {
