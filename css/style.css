@@ -286,6 +286,20 @@ body.simple-black .page {
   border-radius: 10px;
 }
 
+.product-set-note {
+  width: min(100%, 520px);
+  margin: 18px auto 0;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(240, 203, 9, 0.6);
+  background: rgba(240, 203, 9, 0.08);
+  color: #fff8c7;
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .back-to-sample-btn {
   display: block;
   width: min(100%, 520px);
