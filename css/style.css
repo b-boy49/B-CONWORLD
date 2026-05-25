@@ -15,7 +15,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #020202;
-  background-image: url("../image/right.png");
+  background-image: url("../image/4b583400-e211-40f3-b395-474676bbd9c4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +23,11 @@ body {
   color: var(--white);
   font-family: "Noto Sans JP", sans-serif;
   overflow-x: hidden;
+}
+
+body.home-page {
+  background-size: contain;
+  background-position: right top;
 }
 
 body.simple-black {
@@ -348,6 +353,46 @@ body.simple-black .page {
   width: clamp(50px, 4.4vw, 72px);
   height: clamp(50px, 4.4vw, 72px);
   z-index: 2;
+}
+
+.music-main {
+  background: #000;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.music-top {
+  width: 100%;
+}
+
+.music-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.music-hero {
+  width: min(92%, 980px);
+  margin: clamp(24px, 4vw, 44px) auto clamp(36px, 6vw, 72px);
+  border: 2px solid rgba(240, 203, 9, 0.7);
+  border-radius: 14px;
+  padding: clamp(28px, 5vw, 48px) clamp(20px, 4vw, 40px);
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.music-hero h1 {
+  margin: 0;
+  color: #f0cb09;
+  font-size: clamp(34px, 7vw, 64px);
+  letter-spacing: 0.08em;
+}
+
+.music-hero p {
+  margin: 14px 0 0;
+  color: #fff;
+  font-size: clamp(16px, 2.3vw, 24px);
+  font-weight: 700;
 }
 
 .contact-main {

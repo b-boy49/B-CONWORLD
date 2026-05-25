@@ -17,6 +17,7 @@ This repository is a static front-end site (no build pipeline).
 
 - `index.html`: Main landing page with fixed left sidebar navigation.
 - `sample.html`: Samples page, reusing the same sidebar and social links.
+- `music.html`: Music creation page, reusing the same sidebar and social links.
 - `css/style.css`: Shared styling for layout, navigation, social buttons, and animations.
 - `javascript/script.js`: Client-side behavior (keep enhancements lightweight).
 - `image/`: All visual assets (logos, social icons, page banners).
@@ -26,8 +27,11 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 ## Current Site Snapshot
 - Sidebar is fixed on the left across pages.
 - On mobile widths (around `900px` and below), sidebar navigation switches from vertical stacking to a horizontal wrapped layout.
-- On mobile widths (around `900px` and below), the top page background image uses a full-image fit (`contain`, top-centered) so the artwork remains visible.
+- Top page (`index.html`) background image uses a full-image fit (`contain`) aligned to the top-right (`background-position: right top`) so the artwork remains visible.
+- Top page (`index.html`) background image asset is `image/4b583400-e211-40f3-b395-474676bbd9c4.png`.
 - Main pages: `index.html` (top) and `sample.html` (samples).
+- Sidebar nav order includes `トップ` → `サンプル` → `音楽作成` → `料金` → `購入の流れ` → `利用規約・お問い合わせ`.
+- `music.html` displays a top image (`image/5a40dd66-d567-4bae-9444-a299d209d293.png`) followed by a centered "音楽作成" section with a "準備中" message on black background.
 - `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
 - `contact.html` (terms/contact destination) displays two full-width images (`image/b5347a23-02c2-44f1-862c-801d6d9e670b.png` then `image/3d4c1f6d-691f-4e85-aca1-c22c156052b7.png`) and a full-width image button (`image/b87b7625-3821-4545-8b9b-05805b34f2e6.png`) linking to X in a new tab.
