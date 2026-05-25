@@ -38,6 +38,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Each music sample card uses the same gold separator treatment as `sample.html` (gold bottom line with animated electric highlight).
 - Music sample cards are slightly narrower than the sample section container and centered individually.
 - Music sample cards in `music.html` use `<video>` players referencing `video/b-boy49PV.mp4`, `video/PV.mp4`, and `video/6a39aee7af9f7487.mp4`.
+- Music sample videos in `music.html` have a YouTube-like centered play button overlay that fades out while playing.
 - Music sample cards use a fixed format: title at top, movie-screen image area in the center, and a descriptive comment at bottom.
 - In music sample item 1 comment, `音源＋歌＋PV ３万円` is highlighted in yellow text.
 - `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.

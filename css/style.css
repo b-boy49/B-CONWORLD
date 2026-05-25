@@ -430,6 +430,7 @@ body.simple-black .page {
 }
 
 .music-card-video {
+  position: relative;
   margin-top: 14px;
   border: 2px solid rgba(255, 255, 255, 0.18);
   border-radius: 12px;
@@ -447,6 +448,45 @@ body.simple-black .page {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.music-video-center-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 9vw, 92px);
+  height: clamp(64px, 9vw, 92px);
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.62);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.music-video-center-play:hover,
+.music-video-center-play:focus-visible {
+  background: rgba(240, 203, 9, 0.92);
+  transform: translate(-50%, -50%) scale(1.06);
+  outline: none;
+}
+
+.music-video-center-play-icon {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-top: clamp(10px, 1.5vw, 14px) solid transparent;
+  border-bottom: clamp(10px, 1.5vw, 14px) solid transparent;
+  border-left: clamp(18px, 2.6vw, 24px) solid #fff;
+}
+
+.music-card-video.is-playing .music-video-center-play {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .music-card-comment {
