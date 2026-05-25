@@ -462,10 +462,10 @@ body.simple-black .page {
 }
 
 .music-bottom-visual {
-  width: calc(100vw - 100px);
-  min-height: clamp(260px, 42vw, 620px);
-  margin: 50px auto;
-  margin-left: calc(50% - 50vw + 50px);
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  margin: 10px auto;
+  margin-left: calc(50% - 50vw + 10px);
   background-color: #000;
   background-image: url("../image/005b930d-8c32-4173-8bfd-f5104d19631a.png");
   background-repeat: no-repeat;

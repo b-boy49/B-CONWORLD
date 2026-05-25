@@ -34,7 +34,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Sidebar nav order includes `トップ` → `サンプル` → `音楽作成` → `料金` → `購入の流れ` → `利用規約・お問い合わせ`.
 - `music.html` displays a top image (`image/5a40dd66-d567-4bae-9444-a299d209d293.png`) followed by vertically stacked product sample cards.
 - The music sample section begins with a centered heading: `サンプル一覧`.
-- `music.html` places a bottom background visual (`image/005b930d-8c32-4173-8bfd-f5104d19631a.png`) at the end of the music sample section, displayed near full viewport size with about 50px outer margins on all sides and scaled with `contain` to avoid clipping.
+- `music.html` places a bottom background visual (`image/005b930d-8c32-4173-8bfd-f5104d19631a.png`) at the end of the music sample section, displayed viewport-sized with about 10px outer margins and scaled with `contain` to keep aspect ratio and avoid clipping.
 - Each music sample card uses the same gold separator treatment as `sample.html` (gold bottom line with animated electric highlight).
 - Music sample cards are slightly narrower than the sample section container and centered individually.
 - Music sample cards in `music.html` use `<video>` players referencing `video/b-boy49PV.mp4`, `video/PV.mp4`, and `video/6a39aee7af9f7487.mp4`.
