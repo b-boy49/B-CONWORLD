@@ -21,6 +21,7 @@ This repository is a static front-end site (no build pipeline).
 - `css/style.css`: Shared styling for layout, navigation, social buttons, and animations.
 - `javascript/script.js`: Client-side behavior (keep enhancements lightweight).
 - `image/`: All visual assets (logos, social icons, page banners).
+- `video/`: Movie sample assets used by `music.html` (`b-boy49PV.mp4`, `PV.mp4`, `6a39aee7af9f7487.mp4`).
 
 Keep page-specific layout rules grouped in clearly named CSS blocks (for example, `.sample-*` for `sample.html`).
 
@@ -31,7 +32,14 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Top page (`index.html`) background image asset is `image/4b583400-e211-40f3-b395-474676bbd9c4.png`.
 - Main pages: `index.html` (top) and `sample.html` (samples).
 - Sidebar nav order includes `トップ` → `サンプル` → `音楽作成` → `料金` → `購入の流れ` → `利用規約・お問い合わせ`.
-- `music.html` displays a top image (`image/5a40dd66-d567-4bae-9444-a299d209d293.png`) followed by a centered "音楽作成" section with a "準備中" message on black background.
+- `music.html` displays a top image (`image/5a40dd66-d567-4bae-9444-a299d209d293.png`) followed by vertically stacked product sample cards.
+- The music sample section begins with a centered heading: `サンプル一覧`.
+- `music.html` places a bottom background visual (`image/005b930d-8c32-4173-8bfd-f5104d19631a.png`) at the end of the music sample section, displayed near full viewport size with about 50px outer margins on all sides and scaled with `contain` to avoid clipping.
+- Each music sample card uses the same gold separator treatment as `sample.html` (gold bottom line with animated electric highlight).
+- Music sample cards are slightly narrower than the sample section container and centered individually.
+- Music sample cards in `music.html` use `<video>` players referencing `video/b-boy49PV.mp4`, `video/PV.mp4`, and `video/6a39aee7af9f7487.mp4`.
+- Music sample cards use a fixed format: title at top, movie-screen image area in the center, and a descriptive comment at bottom.
+- In music sample item 1 comment, `音源＋歌＋PV ３万円` is highlighted in yellow text.
 - `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
 - `contact.html` (terms/contact destination) displays two full-width images (`image/b5347a23-02c2-44f1-862c-801d6d9e670b.png` then `image/3d4c1f6d-691f-4e85-aca1-c22c156052b7.png`) and a full-width image button (`image/b87b7625-3821-4545-8b9b-05805b34f2e6.png`) linking to X in a new tab.
