@@ -330,6 +330,21 @@ body.simple-black .page {
   height: auto;
 }
 
+.price-main .price-hero + .price-hero {
+  margin-top: 50px;
+  position: relative;
+}
+
+.price-main .price-hero + .price-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  height: 3px;
+  background: linear-gradient(90deg, #7d6700 0%, #f0cb09 50%, #7d6700 100%);
+}
+
 .flow-main {
   background: #000;
   padding: 0;

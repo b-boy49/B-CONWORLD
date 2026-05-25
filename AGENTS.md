@@ -41,7 +41,8 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Music sample videos in `music.html` have a YouTube-like centered play button overlay that fades out while playing.
 - Music sample cards use a fixed format: title at top, movie-screen image area in the center, and a descriptive comment at bottom.
 - In music sample item 1 comment, `音源＋歌＋PV ３万円` is highlighted in yellow text.
-- `price.html` displays a single pricing image (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png`) at full width, with vertical scrolling to view the entire image.
+- `price.html` displays two full-width images (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png` then `image/005b930d-8c32-4173-8bfd-f5104d19631a.png`) with vertical scrolling to view the entire content.
+- In `price.html`, the second image is separated by about 50px spacing with a horizontal gold line between the two images.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
 - `contact.html` (terms/contact destination) displays two full-width images (`image/b5347a23-02c2-44f1-862c-801d6d9e670b.png` then `image/3d4c1f6d-691f-4e85-aca1-c22c156052b7.png`) and a full-width image button (`image/b87b7625-3821-4545-8b9b-05805b34f2e6.png`) linking to X in a new tab.
 - The contact page image button has an exaggerated hover/focus effect (lift, scale, glow, and color boost) for strong visual feedback.
