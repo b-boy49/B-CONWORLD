@@ -465,6 +465,13 @@ body.simple-black .page {
   height: auto;
 }
 
+.music-card-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 .music-video-center-play {
   position: absolute;
   left: 50%;
