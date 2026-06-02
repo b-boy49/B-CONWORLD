@@ -52,9 +52,10 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - `sample.html` shows top hero banner from `image/SAMPLES TOP.png`.
 - Samples hero includes animated yellow electric line at the bottom edge.
 - `sample.html` lists sample blocks through `NO7`; `NO7` links to `no7-detail.html` and uses `image/dde3fda5-7ab3-4848-ae42-918bb54a8625.png`.
+- The `NO7` link in `sample.html` includes a cache-busting query (`no7-detail.html?v=20260602b`) so production browsers fetch the latest detail page.
 - `no4-detail.html`, `no5-detail.html`, `no6-detail.html`, and `no7-detail.html` include a worldbuilding set note: image processing + logo, stamp, and one thumbnail or waiting screen image for 2000 JPY instead of the normal 2500 JPY.
 - Production-facing image `src` values should use ASCII filenames where practical to avoid hosting/path normalization issues.
-- `no7-detail.html` uses `image/no7-original-icon.jpg` in the original icon area, includes six product cards, and shows the same worldbuilding set note.
+- `no7-detail.html` uses cache-busted ASCII image URLs (for example, `image/no7-original-icon.jpg?v=20260602b`) in the original icon area and product cards, includes six product cards, and shows the same worldbuilding set note.
 - The first `no7-detail.html` product card is `加工＋ロゴ（１０００円）` and uses `image/no7-logo.png`.
 - The first `no7-detail.html` stamp card is `スタンプ１枚（５００円）` and uses `image/no7-stamp-1.png`.
 - The third `no7-detail.html` product card is `スタンプ１枚（５００円）` and uses `image/no7-stamp-2.png`.
