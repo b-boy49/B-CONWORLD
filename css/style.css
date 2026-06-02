@@ -719,7 +719,7 @@ body.simple-black .page {
 }
 
 .nav-dropdown:not([open]) nav {
-  display: grid;
+  display: none;
 }
 
 .sidebar nav a {

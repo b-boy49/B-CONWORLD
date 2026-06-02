@@ -1,5 +1,21 @@
 console.log("B-CONWORLD ready");
 
+// Keep nav expanded on desktop, and let the hamburger control it on mobile.
+(function () {
+  const dropdown = document.querySelector(".nav-dropdown");
+  if (!dropdown) return;
+  const mq = window.matchMedia("(max-width: 900px)");
+  function applyNav(e) {
+    if (e.matches) {
+      dropdown.removeAttribute("open");
+    } else {
+      dropdown.setAttribute("open", "");
+    }
+  }
+  applyNav(mq);
+  mq.addEventListener("change", applyNav);
+})();
+
 document.querySelectorAll(".music-card-video").forEach((wrapper) => {
   const video = wrapper.querySelector("video");
   const playBtn = wrapper.querySelector(".music-video-center-play");
