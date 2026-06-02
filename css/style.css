@@ -331,6 +331,40 @@ body.simple-black .page {
   height: auto;
 }
 
+.price-image-wrap {
+  position: relative;
+}
+
+.price-update-label {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  min-width: 8.9%;
+  height: 5.8%;
+  color: #f0cb09;
+  background: #050505;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: clamp(10px, 2.35vw, 38px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow:
+    0 2px 0 #000,
+    0 0 10px rgba(240, 203, 9, 0.45);
+  transform: skewX(-7deg);
+  pointer-events: none;
+}
+
+.price-update-logo {
+  left: 4.9%;
+  top: 25.4%;
+}
+
+.price-update-overlay {
+  left: 34%;
+  top: 24.3%;
+}
+
 .price-main .price-hero + .price-hero {
   margin-top: 50px;
   position: relative;
