@@ -58,7 +58,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - The first `no7-detail.html` stamp card is `スタンプ１枚（５００円）` and uses `image/ぽん　スタンプ.png`.
 - The third `no7-detail.html` product card is `スタンプ１枚（５００円）` and uses `image/ぽんスタンプ.png`.
 - The fourth `no7-detail.html` product card is `待機画面（１０００円）` and uses `image/ぽん　待機画面.png`.
-- The fifth `no7-detail.html` product card is `ゲームオーバーレイ（3000円）` and uses `image/ぽん　オーバーレイ１.png`.
+- The fifth `no7-detail.html` product card is `ゲームオーバーレイ（3000円）` and uses `image/2232323_1820x1020.png`.
 - `stamp-detail.html` includes an `SNS用ヘッダー（１０００円）` product card using `image/e134cc19-3e40-4012-8390-3f08700bf013.png`.
 
 ## Business Context (Read First for Content Work)
