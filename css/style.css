@@ -667,7 +667,7 @@ body.simple-black .page {
 
 .nav-dropdown summary {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   color: #fff;
   border-top: 1px solid #222;
@@ -715,11 +715,11 @@ body.simple-black .page {
 }
 
 .nav-dropdown[open] nav {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .nav-dropdown:not([open]) nav {
-  display: none;
+  display: grid;
 }
 
 .sidebar nav a {
@@ -872,6 +872,7 @@ body.simple-black .page {
   }
 
   .nav-dropdown summary {
+    display: block;
     width: 58px;
     height: 48px;
     border: 1px solid rgba(240, 203, 9, 0.72);
@@ -915,6 +916,10 @@ body.simple-black .page {
 
   .nav-dropdown[open] nav {
     margin-top: 12px;
+  }
+
+  .nav-dropdown:not([open]) nav {
+    display: none;
   }
 
   .sidebar nav {
