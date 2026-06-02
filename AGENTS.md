@@ -56,6 +56,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - `no7-detail.html` uses `image/ぽん　元アイコン.JPG` in the original icon area, includes five product cards, and shows the same 1500 JPY set note.
 - The first `no7-detail.html` product card is `加工＋ロゴ（１０００円）` and uses `image/ぽん　加工アンドロゴ.png`.
 - The first `no7-detail.html` stamp card is `スタンプ１枚（５００円）` and uses `image/ぽん　スタンプ.png`.
+- The third `no7-detail.html` product card is `スタンプ１枚（５００円）` and uses `image/ぽんスタンプ.png`.
 
 ## Business Context (Read First for Content Work)
 Primary business context file:
