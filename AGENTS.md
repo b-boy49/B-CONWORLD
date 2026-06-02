@@ -52,7 +52,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Samples hero includes animated yellow electric line at the bottom edge.
 - `sample.html` lists sample blocks through `NO7`; `NO7` links to `no7-detail.html` and uses `image/dde3fda5-7ab3-4848-ae42-918bb54a8625.png`.
 - `no4-detail.html`, `no5-detail.html`, and `no6-detail.html` include three item cards and a note that items 1-3 can be ordered as a 1500 JPY set (normal total 2000 JPY).
-- `no7-detail.html` includes five product cards and the same 1500 JPY set note.
+- `no7-detail.html` uses `image/ぽん　元アイコン.JPG` in the original icon area, includes five product cards, and shows the same 1500 JPY set note.
 
 ## Business Context (Read First for Content Work)
 Primary business context file:
