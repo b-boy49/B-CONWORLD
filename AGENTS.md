@@ -43,7 +43,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Music sample cards use a fixed format: title at top, movie-screen image area in the center, and a descriptive comment at bottom.
 - In music sample item 1 comment, `音源＋歌＋PV ３万円` is highlighted in yellow text.
 - `price.html` displays two full-width images (`image/cd80d8df-5c45-4b18-91b3-6f2940c80419.png` then `image/005b930d-8c32-4173-8bfd-f5104d19631a.png`) with vertical scrolling to view the entire content.
-- The first `price.html` image is wrapped in `.price-image-wrap` and overlays `.price-update-label` text for current pricing: icon+logo `1000円` and overlay `3000円`.
+- The first `price.html` image is wrapped in `.price-image-wrap` and overlays current pricing labels: icon+logo `1000円`, overlay `3000円`, and worldbuilding set `2000円` (normal `2500円`).
 - In `price.html`, the second image is separated by about 50px spacing with a horizontal gold line between the two images.
 - `flow.html` displays a full-width flow image (`image/f780bd52-9751-4108-b492-12d39c4844f1.png`) with vertical scrolling to view the entire image.
 - `contact.html` (terms/contact destination) displays two full-width images (`image/b5347a23-02c2-44f1-862c-801d6d9e670b.png` then `image/3d4c1f6d-691f-4e85-aca1-c22c156052b7.png`) and a full-width image button (`image/b87b7625-3821-4545-8b9b-05805b34f2e6.png`) linking to X in a new tab.
@@ -52,7 +52,7 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - `sample.html` shows top hero banner from `image/SAMPLES TOP.png`.
 - Samples hero includes animated yellow electric line at the bottom edge.
 - `sample.html` lists sample blocks through `NO7`; `NO7` links to `no7-detail.html` and uses `image/dde3fda5-7ab3-4848-ae42-918bb54a8625.png`.
-- `no4-detail.html`, `no5-detail.html`, `no6-detail.html`, and `no7-detail.html` include a note that items 1-3 can be ordered as a 1500 JPY set (normal total 4500 JPY).
+- `no4-detail.html`, `no5-detail.html`, `no6-detail.html`, and `no7-detail.html` include a worldbuilding set note: image processing + logo, stamp, and one thumbnail or waiting screen image for 2000 JPY instead of the normal 2500 JPY.
 - `no7-detail.html` uses `image/ぽん　元アイコン.JPG` in the original icon area, includes five product cards, and shows the same 1500 JPY set note.
 - The first `no7-detail.html` product card is `加工＋ロゴ（１０００円）` and uses `image/ぽん　加工アンドロゴ.png`.
 - The first `no7-detail.html` stamp card is `スタンプ１枚（５００円）` and uses `image/ぽん　スタンプ.png`.
@@ -66,7 +66,7 @@ Primary business context file:
 Summary:
 - Service targets streamers/VTubers/SNS creators and builds unified brand visuals from one icon.
 - Main deliverables include icon, logo, stamp, overlay, schedule image, thumbnail, and promo images.
-- Pricing is low-cost (e.g., icon+logo 1000 JPY, overlay 3000 JPY) with a 1500 JPY set option.
+- Pricing is low-cost (e.g., icon+logo 1000 JPY, overlay 3000 JPY) with a 2000 JPY worldbuilding set option for icon/logo + stamp + one thumbnail or waiting screen image.
 - Subscription plan: 2000 JPY/month for weekly schedule visuals (4 per month).
 - Design priority: maximize creator identity and consistent worldbuilding.
 - Policy includes prepayment, start after payment confirmation, no unauthorized resale.

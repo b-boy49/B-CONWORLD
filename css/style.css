@@ -365,6 +365,71 @@ body.simple-black .page {
   top: 24.3%;
 }
 
+.price-update-set-heading,
+.price-update-set-items,
+.price-update-set-price,
+.price-update-set-note {
+  position: absolute;
+  background: #050505;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+.price-update-set-heading {
+  left: 13.4%;
+  top: 50.8%;
+  width: 25%;
+  height: 5.4%;
+  color: #fff;
+  font-size: clamp(14px, 3.35vw, 54px);
+  line-height: 1;
+  text-shadow: 0 3px 0 #000;
+}
+
+.price-update-set-items {
+  left: 12.9%;
+  top: 56%;
+  width: 48%;
+  height: 3.2%;
+  display: grid;
+  place-items: center start;
+  color: #f0cb09;
+  font-size: clamp(8px, 1.2vw, 18px);
+  line-height: 1;
+}
+
+.price-update-set-price {
+  left: 13%;
+  top: 59.2%;
+  width: 19.4%;
+  height: 9.8%;
+  display: grid;
+  place-items: center;
+  color: #ff9d09;
+  font-size: clamp(22px, 5.6vw, 86px);
+  line-height: 1;
+  text-shadow:
+    0 2px 0 #fff7a8,
+    0 5px 0 #b01a00,
+    0 0 18px rgba(255, 214, 0, 0.8);
+  transform: skewX(-8deg);
+}
+
+.price-update-set-note {
+  left: 14.5%;
+  top: 70%;
+  width: 36%;
+  height: 3.1%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: #b80b0b;
+  font-size: clamp(8px, 1.15vw, 17px);
+  line-height: 1;
+}
+
 .price-main .price-hero + .price-hero {
   margin-top: 50px;
   position: relative;
