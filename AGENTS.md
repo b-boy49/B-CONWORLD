@@ -53,12 +53,13 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 - Samples hero includes animated yellow electric line at the bottom edge.
 - `sample.html` lists sample blocks through `NO7`; `NO7` links to `no7-detail.html` and uses `image/dde3fda5-7ab3-4848-ae42-918bb54a8625.png`.
 - `no4-detail.html`, `no5-detail.html`, `no6-detail.html`, and `no7-detail.html` include a worldbuilding set note: image processing + logo, stamp, and one thumbnail or waiting screen image for 2000 JPY instead of the normal 2500 JPY.
-- `no7-detail.html` uses `image/ぽん　元アイコン.JPG` in the original icon area, includes five product cards, and shows the same worldbuilding set note.
+- `no7-detail.html` uses `image/ぽん　元アイコン.JPG` in the original icon area, includes six product cards, and shows the same worldbuilding set note.
 - The first `no7-detail.html` product card is `加工＋ロゴ（１０００円）` and uses `image/ぽん　加工アンドロゴ.png`.
 - The first `no7-detail.html` stamp card is `スタンプ１枚（５００円）` and uses `image/ぽん　スタンプ.png`.
 - The third `no7-detail.html` product card is `スタンプ１枚（５００円）` and uses `image/ぽんスタンプ.png`.
 - The fourth `no7-detail.html` product card is `待機画面（１０００円）` and uses `image/ぽん　待機画面.png`.
 - The fifth `no7-detail.html` product card is `ゲームオーバーレイ（3000円）` and uses `image/2232323_1820x1020.png`.
+- The sixth `no7-detail.html` product card is `オーバレイ（３０００円）` and uses `image/ぽんオーバレイ２新　.png`.
 - `stamp-detail.html` includes an `SNS用ヘッダー（１０００円）` product card using `image/e134cc19-3e40-4012-8390-3f08700bf013.png`.
 
 ## Business Context (Read First for Content Work)
