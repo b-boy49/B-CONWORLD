@@ -107,7 +107,8 @@ body.simple-black .page {
   height: auto;
 }
 
-.sample-thumb-no6 {
+.sample-thumb-no6,
+.sample-thumb-no7 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
