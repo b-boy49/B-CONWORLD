@@ -27,7 +27,8 @@ Keep page-specific layout rules grouped in clearly named CSS blocks (for example
 
 ## Current Site Snapshot
 - Sidebar is fixed on the left across pages.
-- On mobile widths (around `900px` and below), sidebar navigation switches from vertical stacking to a horizontal wrapped layout.
+- Sidebar navigation is implemented as a dropdown menu with `<details class="nav-dropdown">` across pages.
+- On mobile widths (around `900px` and below), sidebar navigation collapses to a hamburger button; when opened, the menu links expand horizontally with wrapping.
 - Top page (`index.html`) background image uses a full-image fit (`contain`) aligned to the top-right (`background-position: right top`) so the artwork remains visible.
 - Top page (`index.html`) background image asset is `image/4b583400-e211-40f3-b395-474676bbd9c4.png`.
 - Main pages: `index.html` (top) and `sample.html` (samples).
