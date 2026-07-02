@@ -27,12 +27,29 @@
         <details class="nav-dropdown" open>
           <summary><span>メニュー</span><small>MENU</small></summary>
           <nav aria-label="メインメニュー">
-            <a href="index.html"><span>トップ</span><small>TOP</small></a>
-            <a href="sample.html"><span>サンプル</span><small>SAMPLES</small></a>
-            <a href="music.html"><span>音楽作成</span><small>MUSIC</small></a>
-            <a href="price.html"><span>料金</span><small>PRICE</small></a>
-            <a href="flow.html"><span>購入の流れ</span><small>FLOW</small></a>
-            <a href="contact.html"><span>利用規約・お問い合わせ</span><small>CONTACT</small></a>
+           <a href="index.html"
+             data-event="menu_top"> 
+             <span>トップ</span><small>TOP</small>
+           </a>
+            <a href="sample.html"
+              data-event="menu_sample">
+              <span>サンプル</span><small>SAMPLES</small>
+            </a>
+            <a href="music.html" 
+              data-event="menu_music">
+              <span>音楽作成</span><small>MUSIC</small>
+            </a>
+            <a href="price.html"
+              data-event="menu_price">
+              span>料金</span><small>PRICE</small></a>
+            <a　href="flow.html"
+              data-event="menu_flow">
+              <span>購入の流れ</span><small>FLOW</small>
+            </a>
+            <a href="contact.html" 
+              data-event="menu_contact">
+              <span>利用規約・お問い合わせ</span><small>CONTACT</small>
+            </a>
           </nav>
         </details>
         <div class="sns">
@@ -42,7 +59,7 @@
             aria-label="X"
             target="_blank"
             rel="noopener noreferrer"
-              onclick="gtag('event', 'x_click');"
+               data-event="x_click"
           >
             <img src="image/X.png" alt="X" />
           </a>
@@ -52,7 +69,7 @@
             aria-label="Discord"
             target="_blank"
             rel="noopener noreferrer"
-            onclick="gtag('event', 'discord_click');"
+             data-event="discord_click"
           >
             <img src="image/Discord.png" alt="Discord" />
           </a>
@@ -62,6 +79,7 @@
             aria-label="Twitch"
             target="_blank"
             rel="noopener noreferrer"
+            data-event="twitch_click"
           >
             <img src="image/Twhich.png" alt="Twitch" />
           </a>
@@ -69,5 +87,19 @@
       </aside>
     </div>
     <script src="javascript/script.js"></script>
+    <script>
+  document.querySelectorAll('[data-event]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      const eventName = link.dataset.event;
+
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, {
+  link_url: link.href,
+  link_text: link.textContent.trim()
+});
+      }
+    });
+  });
+</script>
   </body>
 </html>
